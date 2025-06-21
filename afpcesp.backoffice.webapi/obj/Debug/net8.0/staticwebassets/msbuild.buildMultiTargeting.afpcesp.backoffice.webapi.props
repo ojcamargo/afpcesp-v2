@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/afpcesp.backoffice.webapi.props" />
+</Project>

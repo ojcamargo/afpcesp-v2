@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/afpcesp.backoffice.webapi.props" />
+</Project>

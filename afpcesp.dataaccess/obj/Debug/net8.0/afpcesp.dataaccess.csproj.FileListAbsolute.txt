@@ -1,0 +1,14 @@
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/bin/Debug/net8.0/afpcesp.dataaccess.deps.json
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/bin/Debug/net8.0/afpcesp.dataaccess.runtimeconfig.json
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/bin/Debug/net8.0/afpcesp.dataaccess.dll
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/bin/Debug/net8.0/afpcesp.dataaccess.pdb
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.csproj.AssemblyReference.cache
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.GeneratedMSBuildEditorConfig.editorconfig
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.AssemblyInfoInputs.cache
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.AssemblyInfo.cs
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.csproj.CoreCompileInputs.cache
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.dll
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/refint/afpcesp.dataaccess.dll
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.pdb
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.genruntimeconfig.cache
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/ref/afpcesp.dataaccess.dll

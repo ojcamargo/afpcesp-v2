@@ -1,0 +1,15 @@
+#efetuar download imagem sql server
+docker pull mcr.microsoft.com/mssql/server:2022-latest
+
+#instalar e executar imagem sql server
+#atencao para senha do user SA, deve seguir as politicas de senhas da microsoft
+#senhas que estejam fora das diretrizes podem causar falha de conexão
+
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=admin@01" \
+   -p 1433:1433 --name sql1 --hostname sql1 \
+   -d \
+   mcr.microsoft.com/mssql/server:2022-latest
+
+#testar conexao
+docker exec -it sql1 "bash"
+/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "admin@01"

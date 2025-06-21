@@ -1,0 +1,30 @@
+//criar solução
+dotnet new sln -n afpcesp.backoffice.api
+
+//criar webapi
+dotnet new webapi -n afpcesp.backoffice.webapi
+
+//adicionar projeto a solução
+dotnet sln add afpcesp.backoffice.webapi/afpcesp.backoffice.webapi.csproj
+
+//criar projeto de acesso a dados
+dotnet new classlib -n afpcesp.dataaccess
+
+//adicionar projeto a solução
+dotnet sln add afpcesp.dataaccess/afpcesp.dataaccess.csproj
+
+//adicionar ao projeto webapi a referencia do projeto de acesso a dados
+dotnet add afpcesp.application/afpcesp.application.csproj reference afpcesp.dataaccess/afpcesp.dataaccess.csproj
+dotnet add afpcesp.backoffice.webapi/afpcesp.backoffice.webapi.csproj reference afpcesp.application/afpcesp.application.csproj
+
+//remove reference
+dotnet remove afpcesp.backoffice.webapi/afpcesp.backoffice.webapi.csproj reference afpcesp.dataaccess/afpcesp.dataaccess.csproj
+
+//instalar ef core
+cd afpcesp.dataaccess/
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+//criar modelos a partir das tabelas
+dotnet ef dbcontext scaffold "Server=localhost;Database=afpcesp;User Id=sa;Password={senha};Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models --force

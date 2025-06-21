@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "+xW9JALZdwkcVWh5eDL5UfAIGAvlGxltW7fc6zdxGVY=",
+  "Source": "afpcesp.backoffice.webapi",
+  "BasePath": "_content/afpcesp.backoffice.webapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
