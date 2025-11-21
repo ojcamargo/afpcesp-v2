@@ -204,7 +204,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"username\": \"novousuario\",\n  \"email\": \"novo@example.com\",\n  \"name\": \"Novo Usuário\",\n  \"password\": \"senha123\"\n}"
+							"raw": "{\n  \"username\": \"novousuario\",\n  \"email\": \"novo@example.com\",\n  \"name\": \"user1\",\n  \"password\": \"****\"\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/User",
