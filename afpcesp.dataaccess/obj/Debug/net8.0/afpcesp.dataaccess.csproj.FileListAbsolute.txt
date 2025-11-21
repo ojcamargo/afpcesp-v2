@@ -12,3 +12,4 @@
 /home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.pdb
 /home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.genruntimeconfig.cache
 /home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/ref/afpcesp.dataaccess.dll
+/home/ojcamargo/projects/afpcesp/afpcesp.dataaccess/obj/Debug/net8.0/afpcesp.dataaccess.sourcelink.json

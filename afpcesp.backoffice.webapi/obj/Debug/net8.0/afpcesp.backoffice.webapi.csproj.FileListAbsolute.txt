@@ -89,3 +89,5 @@
 /home/ojcamargo/projects/afpcesp/afpcesp.backoffice.webapi/obj/Debug/net8.0/afpcesp.backoffice.webapi.pdb
 /home/ojcamargo/projects/afpcesp/afpcesp.backoffice.webapi/obj/Debug/net8.0/afpcesp.backoffice.webapi.genruntimeconfig.cache
 /home/ojcamargo/projects/afpcesp/afpcesp.backoffice.webapi/obj/Debug/net8.0/ref/afpcesp.backoffice.webapi.dll
+/home/ojcamargo/projects/afpcesp/afpcesp.backoffice.webapi/obj/Debug/net8.0/afpcesp.backoffice.webapi.sourcelink.json
+/home/ojcamargo/projects/afpcesp/afpcesp.backoffice.webapi/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

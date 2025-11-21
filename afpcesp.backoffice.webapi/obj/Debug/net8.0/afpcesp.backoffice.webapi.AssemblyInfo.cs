@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("afpcesp.backoffice.webapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f568c4a4275ed793f5056a4bfb2cc800b57c3805")]
 [assembly: System.Reflection.AssemblyProductAttribute("afpcesp.backoffice.webapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("afpcesp.backoffice.webapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

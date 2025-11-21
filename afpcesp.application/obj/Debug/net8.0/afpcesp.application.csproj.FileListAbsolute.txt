@@ -13,3 +13,4 @@
 /home/ojcamargo/projects/afpcesp/afpcesp.application/obj/Debug/net8.0/refint/afpcesp.application.dll
 /home/ojcamargo/projects/afpcesp/afpcesp.application/obj/Debug/net8.0/afpcesp.application.pdb
 /home/ojcamargo/projects/afpcesp/afpcesp.application/obj/Debug/net8.0/ref/afpcesp.application.dll
+/home/ojcamargo/projects/afpcesp/afpcesp.application/obj/Debug/net8.0/afpcesp.application.sourcelink.json

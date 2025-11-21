@@ -1,6 +1,121 @@
-@afpcesp.backoffice.webapi_HostAddress = http://localhost:5031
+### ==============================================
+### AFPCESP BackOffice API - Exemplos de Requisições
+### ==============================================
 
-GET {{afpcesp.backoffice.webapi_HostAddress}}/weatherforecast/
-Accept: application/json
+@baseUrl = http://localhost:5031
+@token = 
+
+### ==============================================
+### 1. AUTENTICAÇÃO
+### ==============================================
+
+### 1.1 Login - Obter Token JWT
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "usuario",
+  "password": "123456"
+}
+
+### 1.2 Validar Token
+GET {{baseUrl}}/api/auth/validate
+Authorization: Bearer {{token}}
+
+### 1.3 Obter Informações do Usuário Autenticado
+GET {{baseUrl}}/api/auth/me
+Authorization: Bearer {{token}}
+
+### ==============================================
+### 2. USUÁRIOS (REQUER AUTENTICAÇÃO)
+### ==============================================
+
+### 2.1 Listar Todos os Usuários
+# Requer: Autenticação
+GET {{baseUrl}}/api/user
+Authorization: Bearer {{token}}
+
+### 2.2 Buscar Usuário por ID
+# Requer: Autenticação
+GET {{baseUrl}}/api/user/1
+Authorization: Bearer {{token}}
+
+### 2.3 Criar Novo Usuário
+# Requer: Role "Admin"
+POST {{baseUrl}}/api/user
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "username": "novousuario",
+  "email": "novo@afpcesp.com.br",
+  "name": "Novo Usuário"
+}
+
+### 2.4 Atualizar Usuário
+# Requer: Role "Admin"
+PUT {{baseUrl}}/api/user/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "id": 1,
+  "username": "usuarioatualizado",
+  "email": "atualizado@afpcesp.com.br",
+  "name": "Usuário Atualizado"
+}
+
+### 2.5 Deletar Usuário
+# Requer: Role "Admin"
+DELETE {{baseUrl}}/api/user/1
+Authorization: Bearer {{token}}
+
+### ==============================================
+### 3. TESTES DE AUTORIZAÇÃO
+### ==============================================
+
+### 3.1 Tentativa de Acesso SEM Token (401 Unauthorized)
+GET {{baseUrl}}/api/user
+
+### 3.2 Tentativa de Criar Usuário SEM Role Admin (403 Forbidden)
+# Use um token de usuário sem role Admin
+POST {{baseUrl}}/api/user
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "username": "teste",
+  "email": "teste@afpcesp.com.br"
+}
+
+### ==============================================
+### 4. EXEMPLOS COM VARIÁVEIS
+### ==============================================
+
+### 4.1 Login e Salvar Token Automaticamente
+# @name login
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123456"
+}
 
 ###
+@authToken = {{login.response.body.token}}
+
+### 4.2 Usar Token Salvo
+GET {{baseUrl}}/api/user
+Authorization: Bearer {{authToken}}
+
+### ==============================================
+### NOTAS
+### ==============================================
+#
+# - Após fazer login, copie o token retornado e cole na variável @token no topo
+# - Endpoints que requerem role "Admin" retornarão 403 se o usuário não tiver permissão
+# - Endpoints sem token retornarão 401 Unauthorized
+# - Swagger: http://localhost:5031/swagger
+#
+### ==============================================
