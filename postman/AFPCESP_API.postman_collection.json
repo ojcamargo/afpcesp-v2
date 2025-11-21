@@ -53,7 +53,7 @@
 								"login"
 							]
 						},
-						"description": "Endpoint para autenticação de usuários. Retorna um token JWT que será usado nos demais endpoints.\n\n**Credenciais de exemplo:**\n- Username: admin\n- Password: admin123"
+						"description": "Endpoint para autenticação de usuários. Retorna um token JWT que será usado nos demais endpoints.\n\n**Credenciais de exemplo:**\n- Username: ****\n- Password: ****"
 					},
 					"response": []
 				},
